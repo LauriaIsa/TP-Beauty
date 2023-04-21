@@ -1,0 +1,103 @@
+.container {
+    width: 1200px;
+    background: #bcbec0;
+    margin: 10px auto;
+    font-size: 12px;   
+}
+
+.superior {
+    background: #062348;
+    overflow: hidden;  
+}
+
+.logo {
+    float: left;
+    width: 300px;
+    padding: 40px;
+}
+
+
+/* Estilos para el menu */
+.menu {
+    float: right;
+    padding: 50px;   
+}
+
+.opciones li {
+    float: left;
+    list-style: none;
+}
+
+.opciones li a {
+    color: white;
+    padding: 20px;
+    text-decoration: none;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    
+}
+
+.opciones li a:hover {
+    background: #0a3c7e;
+}
+
+
+.pie{
+    background: #062348;
+    overflow: hidden;
+}
+
+.izq{
+    float: left;
+    width: 550px;
+    padding: 30px;
+}
+
+
+
+.centro{
+    float: right;
+    width: 100px;
+    overflow: hidden;
+}
+
+
+.siguenos{
+    text-align: center;
+    color:white;
+    padding: 15px 0px;
+    
+       
+}
+
+.ayuda{
+    display: flex;
+    align-items: center;
+    width: 1000px;
+}
+
+.redes{
+    padding: 2px;
+    margin-top: 5px;
+    text-align: right;
+}
+
+.redes:hover{
+    cursor: pointer;
+    opacity: 0.6;
+}
+
+.pie p{
+    color: white;
+    padding: 20px;
+    font-size: 12px;   
+}
+
+
+.der p{
+    color: white;
+    padding: 20px;
+    font-size: 14px;   
+}

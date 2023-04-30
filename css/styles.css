@@ -181,11 +181,11 @@ article>img{
 
 .product-card:hover .card-btn {
   opacity: 1;
-  border: 1px solid #000;
+  border: 1px solid #A084DC;
 }
 
 .card-btn:hover {
-  background: #000000;
+  background: #A084DC;
   color: #fff;
 }
 
@@ -228,7 +228,7 @@ article>img{
   /* position: absolute; */
   margin:10px;
   padding:10px;
-  background: black /* linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #fff 100%) */; /* Esto forma un gradiente o degradadro  seguyn su angulo , su color de comienzo y intensidad y su color final y su intensidad*/
+  background: #EBC7E6 /* linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #fff 100%) */; /* Esto forma un gradiente o degradadro  seguyn su angulo , su color de comienzo y intensidad y su color final y su intensidad*/
   cursor: pointer;
   z-index: 2; /* Posicion en Z */
 }
@@ -291,9 +291,9 @@ article>img{
   display: block;
   text-align: center;
   padding: 30px;  
-  border:2px solid black;
+  border:2px solid #BFACE2;
   /* border-radius:10px; */
-  background-color: black;
+  background-color: #BFACE2;
   text-decoration: none; 
   color: white;
   width: 100vw;
@@ -315,7 +315,7 @@ article>img{
 .go-top-button{
   width: 0rem;
   height: 0rem;
-  background: #414854;
+  background: #645CBB;
   border-radius: 50%;
   cursor: pointer;
   transition: .2s;

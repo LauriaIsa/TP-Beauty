@@ -10,14 +10,18 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/stylesPromociones.css">
     
 </head>
 <body>
     <header class="superior">
         <div class="logo">
-            <img src="img/logo_beauty.PNG" alt="Logo">
+            <img src="img/beauty_logo.gif" alt="" srcset="">
         </div>
 
         <nav class="menu">
@@ -32,9 +36,14 @@
         </a>
 
             <ul class="opciones">
-                <li><a href="#" class="active">PERFUMES</a>
-
-                <li><a href="#">MAKE UP</a></li>
+                <li><a  class="active desplegable" href="">Productos</a>
+                    <ul class="opciones-desplegable">
+                        <li><a href="">Perfumes Hombre</a></li>
+                        <li><a href="">Perfumes Mujer</a></li>
+                        <li><a href="">Make Up</a></li>
+                    </ul>
+                </li>
+                <!-- <li><a href="#" class="active">PERFUMES</a> -->
                 <li><a href="#">ACERCA DE NOSOTROS</a></li>
                 <li><a href="contacto.html" target="_blank">CONTACTO</a></li>
             </ul>
@@ -45,14 +54,24 @@
 
     <main>
         <div class="contenido-ppal">
-            
+            <h2 class="title">Promociones</h2>
+            <section id="promociones" class="secciones">
+                <div class="slider-frame">
+                    <ul>
+                        <li><img src="img/flyer1.png" alt=""></li>
+                        <li><img src="img/flyer2.jpg" alt=""></li>
+                        <li><img src="img/flyer3.jpg" alt=""></li>
+                        <li><img src="img/flyer4.jpg" alt=""></li>
+                    </ul>
+                </div>
+            </section>
             <h2 class="title">Perfumes Hombre</h2>
-            <section class="secciones product "> 
+            <section id="perfumesHombre" class="secciones product "> 
                 
                 <div class="product-container">
                     <div class="product-card">
                         <div class="product-image">
-                            <img src="img/212 Vip Black Men EDP 100 Ml carolina herrera.png" class="product-thumb" alt="">
+                            <img src="img/perfumes_hombre/212 Vip Black Men EDP 100 Ml carolina herrera.png" class="product-thumb" alt="">
                             <button class="card-btn">Comprar</button>
                         </div>
                         <div class="product-info">
@@ -63,7 +82,7 @@
                     </div>
                     <div class="product-card">
                         <div class="product-image">
-                            <img src="img/212 Heroes EDT 90 Ml Carolina h.png" class="product-thumb" alt="">
+                            <img src="img/perfumes_hombre/212 Heroes EDT 90 Ml Carolina h.png" class="product-thumb" alt="">
                             <button class="card-btn">Comprar</button>
                         </div>
                         <div class="product-info">
@@ -74,7 +93,7 @@
                     </div>
                     <div class="product-card">
                         <div class="product-image">
-                            <img src="img/Bad Boy EDT 100 Ml Carolina Herrera.png" class="product-thumb" alt="">
+                            <img src="img/perfumes_hombre/Bad Boy EDT 100 Ml Carolina Herrera.png" class="product-thumb" alt="">
                             <button class="card-btn">Comprar</button>
                         </div>
                         <div class="product-info">
@@ -85,7 +104,7 @@
                     </div>
                     <div class="product-card">
                         <div class="product-image">
-                            <img src="img/Black Xs EDT 100 Ml Paco Rabanne.png" class="product-thumb" alt="">
+                            <img src="img/perfumes_hombre/Black Xs EDT 100 Ml Paco Rabanne.png" class="product-thumb" alt="">
                             <button class="card-btn">Comprar</button>
                         </div>
                         <div class="product-info">
@@ -96,7 +115,7 @@
                     </div>
                     <div class="product-card">
                         <div class="product-image">
-                            <img src="img/Ck In2U Men EDT 150 Ml.png" class="product-thumb" alt="">
+                            <img src="img/perfumes_hombre/Ck In2U Men EDT 150 Ml.png" class="product-thumb" alt="">
                             <button class="card-btn">Comprar</button>
                         </div>
                         <div class="product-info">
@@ -107,7 +126,7 @@
                     </div>
                     <div class="product-card">
                         <div class="product-image">
-                            <img src="img/Invictus Onix 2020 EDT 100 Ml paco rabanne.png" class="product-thumb" alt="">
+                            <img src="img/perfumes_hombre/Invictus Onix 2020 EDT 100 Ml paco rabanne.png" class="product-thumb" alt="">
                             <button class="card-btn">Comprar</button>
                         </div>
                         <div class="product-info">
@@ -118,7 +137,7 @@
                     </div>
                     <div class="product-card">
                         <div class="product-image">
-                            <img src="img/Invictus Victory EDP 100 Ml Paco Rabanne.png" class="product-thumb" alt="">
+                            <img src="img/perfumes_hombre/Invictus Victory EDP 100 Ml Paco Rabanne.png" class="product-thumb" alt="">
                             <button class="card-btn">Comprar</button>
                         </div>
                         <div class="product-info">
@@ -129,7 +148,7 @@
                     </div>
                     <div class="product-card">
                         <div class="product-image">
-                            <img src="img/Lapidus Intenso EDT 100 Ml ted lapidus.png" class="product-thumb" alt="">
+                            <img src="img/perfumes_hombre/Lapidus Intenso EDT 100 Ml ted lapidus.png" class="product-thumb" alt="">
                             <button class="card-btn">Comprar</button>
                         </div>
                         <div class="product-info">
@@ -140,7 +159,7 @@
                     </div>
                     <div class="product-card">
                         <div class="product-image">
-                            <img src="img/Pure Xs Night EDP 100 Ml Paco Rabanne.png" class="product-thumb" alt="">
+                            <img src="img/perfumes_hombre/Pure Xs Night EDP 100 Ml Paco Rabanne.png" class="product-thumb" alt="">
                             <button class="card-btn">Comprar</button>
                         </div>
                         <div class="product-info">
@@ -151,7 +170,7 @@
                     </div>
                     <div class="product-card">
                         <div class="product-image">
-                            <img src="img/One Million EDT 100 Ml Paco Rabanne.png" class="product-thumb" alt="">
+                            <img src="img/perfumes_hombre/One Million EDT 100 Ml Paco Rabanne.png" class="product-thumb" alt="">
                             <button class="card-btn">Comprar</button>
                         </div>
                         <div class="product-info">
@@ -162,7 +181,7 @@
                     </div>
                     <div class="product-card">
                         <div class="product-image">
-                            <img src="img/Phantom EDT 100 Ml Paco Rabanne.png" class="product-thumb" alt="">
+                            <img src="img/perfumes_hombre/Phantom EDT 100 Ml Paco Rabanne.png" class="product-thumb" alt="">
                             <button class="card-btn">Comprar</button>
                         </div>
                         <div class="product-info">
@@ -181,127 +200,261 @@
             </section>
             <br>
             <h2 class="title">Perfumes Mujer</h2>
-            <section class="secciones product "> 
+            <section id="perfumesMujer" class="secciones product "> 
                 
                 <div class="product-container">
                     <div class="product-card">
                         <div class="product-image">
-                            <img src="img/212 Vip Black Men EDP 100 Ml carolina herrera.png" class="product-thumb" alt="">
+                            <img src="img/perfumes_mujer/ADOLFO DOMINGUEZ AGUA FRESCA DE GARDENIA MUSK EAU DE TOILETTE.jpg" class="product-thumb" alt="">
                             <button class="card-btn">Comprar</button>
                         </div>
                         <div class="product-info">
-                            <h2 class="product-brand">Perfume 212 Vip Black Men Carolina Herrera</h2>
-                            <p class="product-short-description">Una definición de INCREÍBLE 212 VIP BLACK es una explosiva fragancia picante</p>
+                            <h2 class="product-brand">PERFUME ADOLFO DOMINGUEZ AGUA FRESCA DE GARDENIA MUSK</h2>
+                            <p class="product-short-description">Agua Fresca Gardenia Musk Eau de Toilette. Una fragancia floral amaderada</p>
                             <span class="price">$20</span>
                         </div>
                     </div>
                     <div class="product-card">
                         <div class="product-image">
-                            <img src="img/212 Heroes EDT 90 Ml Carolina h.png" class="product-thumb" alt="">
+                            <img src="img/perfumes_mujer/AGATHA RUIZ DE LA PRADA Love Love Love.png" class="product-thumb" alt="">
                             <button class="card-btn">Comprar</button>
                         </div>
                         <div class="product-info">
-                            <h2 class="product-brand">Perfume 212 Heroes Carolina Herrera</h2>
-                            <p class="product-short-description">Sentite siempre joven con 212 Heroes un fresco aroma masculino</p>
+                            <h2 class="product-brand">PERFUME AGATHA RUIZ DE LA PRADA Love Love Love</h2>
+                            <p class="product-short-description">Love Generation es una colección formada por tres fragancias: destinado a una generación de chicas que adoran la vida y la viven intensamente.</p>
                             <span class="price">$20</span>
                         </div>
                     </div>
                     <div class="product-card">
                         <div class="product-image">
-                            <img src="img/Bad Boy EDT 100 Ml Carolina Herrera.png" class="product-thumb" alt="">
+                            <img src="img/perfumes_mujer/ARMANI MY WAY.jpg" class="product-thumb" alt="">
                             <button class="card-btn">Comprar</button>
                         </div>
                         <div class="product-info">
-                            <h2 class="product-brand">Perfume Bad Boy Carolina Herrera</h2>
-                            <p class="product-short-description">Un nuevo perfume masculino,innovador y explosivo </p>
+                            <h2 class="product-brand">Perfume ARMANI MY WAY</h2>
+                            <p class="product-short-description">La nueva fragancia femenina de Giorgio Armani. Es una invitación a un viaje de descubrimiento personal</p>
                             <span class="price">$20</span>
                         </div>
                     </div>
                     <div class="product-card">
                         <div class="product-image">
-                            <img src="img/Black Xs EDT 100 Ml Paco Rabanne.png" class="product-thumb" alt="">
+                            <img src="img/perfumes_mujer/BVGARI Omnia Pink Sapphire Omnilandia.png" class="product-thumb" alt="">
                             <button class="card-btn">Comprar</button>
                         </div>
                         <div class="product-info">
-                            <h2 class="product-brand">Perfume Black Xs Paco Rabanne</h2>
-                            <p class="product-short-description">Black XS, de Paco Rabanne. Siguiendo solo tu instinto. Intensamente, excesivamente. Rompe las reglas.</p>
+                            <h2 class="product-brand">Perfume BVGARI Omnia Pink Sapphire</h2>
+                            <p class="product-short-description">Para esta colección de edición limitada, el empaque es elegante y caprichoso, rindiendo homenaje al mundo del Luna Park</p>
                             <span class="price">$20</span>
                         </div>
                     </div>
                     <div class="product-card">
                         <div class="product-image">
-                            <img src="img/Ck In2U Men EDT 150 Ml.png" class="product-thumb" alt="">
+                            <img src="img/perfumes_mujer/CHER DIECISEIS.jpg" class="product-thumb" alt="">
                             <button class="card-btn">Comprar</button>
                         </div>
                         <div class="product-info">
-                            <h2 class="product-brand">Perfume Ck In2U Men</h2>
-                            <p class="product-short-description">CK IN2U Him de Calvin Klein es un “Eau de Toilette” para hombre perteneciente a la familia Aromática Fougère.</p>
+                            <h2 class="product-brand">Perfume CHER DIECISEIS</h2>
+                            <p class="product-short-description">Una fragancia floral luminosa inspirada en Paris. Donde el romanticismo y el pop frances se combinan atravesando la moda.</p>
                             <span class="price">$20</span>
                         </div>
                     </div>
                     <div class="product-card">
                         <div class="product-image">
-                            <img src="img/Invictus Onix 2020 EDT 100 Ml paco rabanne.png" class="product-thumb" alt="">
+                            <img src="img/perfumes_mujer/Dior Hypnotic Poison EDT 100 Ml.png" class="product-thumb" alt="">
                             <button class="card-btn">Comprar</button>
                         </div>
                         <div class="product-info">
-                            <h2 class="product-brand">Perfume Invictus Onix Paco Rabanne</h2>
-                            <p class="product-short-description">El desierto. El calor. Un héroe invencible. Detrás de la leyenda, un secreto. El de Onyx. Fuente de energía absoluta.</p>
+                            <h2 class="product-brand">Perfume Dior Hypnotic Poison</h2>
+                            <p class="product-short-description">Hypnotic Poison no se lleva, le lleva. Con la Eau de toilette Hypnotic Poison, la Maison Dior crea un mito de la perfumería moderna.</p>
                             <span class="price">$20</span>
                         </div>
                     </div>
                     <div class="product-card">
                         <div class="product-image">
-                            <img src="img/Invictus Victory EDP 100 Ml Paco Rabanne.png" class="product-thumb" alt="">
+                            <img src="img/perfumes_mujer/FLOWER BY KENZO.jpg" class="product-thumb" alt="">
                             <button class="card-btn">Comprar</button>
                         </div>
                         <div class="product-info">
-                            <h2 class="product-brand">Perfume Invictus Victory Rabanne</h2>
-                            <p class="product-short-description">La eau de parfum extrema Invictus Victory de Paco Rabanne provoca un auténtico choque de sentidos..</p>
+                            <h2 class="product-brand">Perfume FLOWER BY KENZO</h2>
+                            <p class="product-short-description">FLOWER BY KENZO L Absolue, KENZO haceun homenaje a su flor favorita: la amapola.</p>
                             <span class="price">$20</span>
                         </div>
                     </div>
                     <div class="product-card">
                         <div class="product-image">
-                            <img src="img/Lapidus Intenso EDT 100 Ml ted lapidus.png" class="product-thumb" alt="">
+                            <img src="img/perfumes_mujer/GIVENCHY L´ INTERDIT.jpg" class="product-thumb" alt="">
                             <button class="card-btn">Comprar</button>
                         </div>
                         <div class="product-info">
-                            <h2 class="product-brand">Perfume Lapidus Intenso Ted Lapidus</h2>
-                            <p class="product-short-description">El ”gourmand” para hombre reinterpretado alrededor de un corazón Mocaccino original, extremadamente adictivo.</p>
+                            <h2 class="product-brand">Perfume GIVENCHY L´ INTERDIT</h2>
+                            <p class="product-short-description">Givenchy presenta su icónica fragancia L Interdit. Un homenaje a la feminidad audaz..</p>
                             <span class="price">$20</span>
                         </div>
                     </div>
                     <div class="product-card">
                         <div class="product-image">
-                            <img src="img/Pure Xs Night EDP 100 Ml Paco Rabanne.png" class="product-thumb" alt="">
+                            <img src="img/perfumes_mujer/GIVENCHY VERY IRRESISTIBLE EDP.jpg" class="product-thumb" alt="">
                             <button class="card-btn">Comprar</button>
                         </div>
                         <div class="product-info">
-                            <h2 class="product-brand">Perfume Pure Xs Night Paco Rabanne</h2>
-                            <p class="product-short-description">Pure XS Night: una fragancia intensa para hombres de Paco Rabanne. Cuando cae la noche, el deseo es alto y los sentidos fluyen.</p>
+                            <h2 class="product-brand">Perfume GIVENCHY VERY IRRESISTIBLE EDP</h2>
+                            <p class="product-short-description">Very Irresistible de Givenchy es una fragancia moderna y floral.</p>
                             <span class="price">$20</span>
                         </div>
                     </div>
                     <div class="product-card">
                         <div class="product-image">
-                            <img src="img/One Million EDT 100 Ml Paco Rabanne.png" class="product-thumb" alt="">
+                            <img src="img/perfumes_mujer/LANCOME LA VIE EST BELLE EDP.jpg" class="product-thumb" alt="">
                             <button class="card-btn">Comprar</button>
                         </div>
                         <div class="product-info">
-                            <h2 class="product-brand">Perfume One Million Paco Rabanne</h2>
-                            <p class="product-short-description">1 MILLION, de Paco Rabanne. El aroma del éxito. Elegante e impertinente en igual medida</p>
+                            <h2 class="product-brand">Perfume LANCOME LA VIE EST BELLE</h2>
+                            <p class="product-short-description">Haz tu vida incluso más hermosa con la fragancia femenina de Lancôme, La Vie est Belle. </p>
                             <span class="price">$20</span>
                         </div>
                     </div>
                     <div class="product-card">
                         <div class="product-image">
-                            <img src="img/Phantom EDT 100 Ml Paco Rabanne.png" class="product-thumb" alt="">
+                            <img src="img/perfumes_mujer/MARC JACOB INTENSE.jpg" class="product-thumb" alt="">
                             <button class="card-btn">Comprar</button>
                         </div>
                         <div class="product-info">
-                            <h2 class="product-brand">Perfume Phantom Paco Rabanne</h2>
-                            <p class="product-short-description">Phantom, la nueva fragancia masculina de Paco Rabanne. La esencia de la confianza en uno mismo.</p>
+                            <h2 class="product-brand">Perfume MARC JACOB INTENSE</h2>
+                            <p class="product-short-description">Un giro descaradamente audaz y sofisticado al Perfect EDP original. Una explosión de narcisos vibrantes y almendras tostadas GOLDEN.</p>
+                            <span class="price">$20</span>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="buttons-card">
+                    <button class="pre-btn"><i class="fa-solid fa-arrow-right"></i></button>
+                    <button class="nxt-btn"><i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+                
+            </section>
+
+            <h2 class="title">Make Up</h2>
+            <section id="makeUp" class="secciones product "> 
+                
+                <div class="product-container">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="img/make_up/Bambi Eye l oreal mascara de pestañas.jpg" class="product-thumb" alt="">
+                            <button class="card-btn">Comprar</button>
+                        </div>
+                        <div class="product-info">
+                            <h2 class="product-brand">Bambi Eye loreal mascara de pestañas</h2>
+                            <p class="product-short-description">Bambi Eye loreal mascara de pestañas</p>
+                            <span class="price">$20</span>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="img/make_up/base 2 maybelline.jpg" class="product-thumb" alt="">
+                            <button class="card-btn">Comprar</button>
+                        </div>
+                        <div class="product-info">
+                            <h2 class="product-brand">Base 2 Maybelline</h2>
+                            <p class="product-short-description">Base 2 Maybelline</p>
+                            <span class="price">$20</span>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="img/make_up/Brochas fascino.jpg" class="product-thumb" alt="">
+                            <button class="card-btn">Comprar</button>
+                        </div>
+                        <div class="product-info">
+                            <h2 class="product-brand">Brochas fascino</h2>
+                            <p class="product-short-description">Brochas fascino</p>
+                            <span class="price">$20</span>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="img/make_up/Bronze maquillaje.jpg" class="product-thumb" alt="">
+                            <button class="card-btn">Comprar</button>
+                        </div>
+                        <div class="product-info">
+                            <h2 class="product-brand">Bronze maquillaje</h2>
+                            <p class="product-short-description">Bronze maquillaje</p>
+                            <span class="price">$20</span>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="img/make_up/Cher maquillajes.jpg" class="product-thumb" alt="">
+                            <button class="card-btn">Comprar</button>
+                        </div>
+                        <div class="product-info">
+                            <h2 class="product-brand">Cher maquillajes</h2>
+                            <p class="product-short-description">Cher maquillajes</p>
+                            <span class="price">$20</span>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="img/make_up/Color Riche Free The Nudes de L'Oréal Paris.jpg" class="product-thumb" alt="">
+                            <button class="card-btn">Comprar</button>
+                        </div>
+                        <div class="product-info">
+                            <h2 class="product-brand">Color Riche Free The Nudes de L'Oréal Paris</h2>
+                            <p class="product-short-description">Color Riche Free The Nudes de L'Oréal Paris.</p>
+                            <span class="price">$20</span>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="img/make_up/corrector Fit Me maybelline.jpg" class="product-thumb" alt="">
+                            <button class="card-btn">Comprar</button>
+                        </div>
+                        <div class="product-info">
+                            <h2 class="product-brand">Corrector Fit Me maybelline</h2>
+                            <p class="product-short-description">Corrector Fit Me maybelline.</p>
+                            <span class="price">$20</span>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="img/make_up/Deliñador maybelline.jpg" class="product-thumb" alt="">
+                            <button class="card-btn">Comprar</button>
+                        </div>
+                        <div class="product-info">
+                            <h2 class="product-brand">Delineador maybelline</h2>
+                            <p class="product-short-description">Delineador maybelline</p>
+                            <span class="price">$20</span>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="img/make_up/Esmalte dior.jpg" class="product-thumb" alt="">
+                            <button class="card-btn">Comprar</button>
+                        </div>
+                        <div class="product-info">
+                            <h2 class="product-brand">Esmalte Dior</h2>
+                            <p class="product-short-description">Esmalte Dior.</p>
+                            <span class="price">$20</span>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="img/make_up/delineadores Color Show maybelline.jpg" class="product-thumb" alt="">
+                            <button class="card-btn">Comprar</button>
+                        </div>
+                        <div class="product-info">
+                            <h2 class="product-brand">Delineadores Color Show maybelline</h2>
+                            <p class="product-short-description">Delineadores Color Show maybelline.</p>
+                            <span class="price">$20</span>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="img/make_up/Dior bases.jpg" class="product-thumb" alt="">
+                            <button class="card-btn">Comprar</button>
+                        </div>
+                        <div class="product-info">
+                            <h2 class="product-brand">Dior Bases</h2>
+                            <p class="product-short-description">Dior Bases.</p>
                             <span class="price">$20</span>
                         </div>
                     </div>

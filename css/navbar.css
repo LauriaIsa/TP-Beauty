@@ -1,13 +1,13 @@
 .container {
     width: 1000px;
-    background: #737576;
+    background: #AA77FF;
     margin: 10px auto;
     font-size: 10px;
 }
 
 .superior {
-    background: #414854;
-    overflow: hidden;
+    background: #645CBB;
+/*     overflow: hidden; */
     position: fixed;
     width: 100%;
     z-index: 3;
@@ -31,20 +31,22 @@
 
 .logo img {
     float: left;
-    width: 130px;
-    height: 70px;    
-    border-radius: 50%;
+    width: 90px;
+    height: 90px;    
+    color: #fff;
     display: inline-flex;
     margin-left: 100px;
-    margin-top: 15px;
+    margin-top: 5px;
     transition: .5s ease;
+    line-height: 0px;
+    border-radius: 50%;
     
 }
 
 .logo img:hover{
-    background:#0ef ;
+    background:#A084DC ;
     color: #1f242d;
-    box-shadow: 0 0 40px #0ef;
+    box-shadow: 0 0 40px #A084DC;
 }
 
 
@@ -59,26 +61,47 @@
 .opciones li {
     float: left;
     list-style: none;
-    
+    line-height: 10px;
+}
+nav ul li:hover>.opciones-desplegable{
+    display: flex;
+}
+.opciones-desplegable {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    padding: 10px;
+    margin-top: 10px;
+    margin-left: 10px;
+    background-color:#BFACE2 ;
+    transition: all .5s ease-in;
+
+}  
+.opciones-desplegable li{
+    padding: 15px;
 }
 
 .opciones li a {
     color: white;
-    transition: .4s;
     text-decoration: none;
     padding: 12px;
     justify-content: center;
     text-align: center;
     font-size: 15px;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    transition: all .6s ease-in-out;
 }
 
 .opciones li a:hover,
 .opciones li a.active {
-    color: #0ef;
-    border-radius: 10px;
+    background-color: #BFACE2;
+    color: #A084DC;
+    
 }
 
-.opciones li ul li{
+/* .opciones li ul li{
     position: absolute;
    
    
@@ -87,7 +110,7 @@
 .opciones li ul li:hover{
     display:initial;
    
-}
+} */
 
 
 footer {
@@ -146,10 +169,10 @@ footer {
    width: 30px;
    height: 30px;
    background: transparent;
-   border: 2px solid #0ef;
+   border: 2px solid #A084DC;
    border-radius: 30%;
    font-size: 20px;
-   color: #0ef;
+   color: #A084DC;
    text-decoration: none;
    align-items: center;
    justify-content: center;
@@ -158,9 +181,9 @@ footer {
 }
 
 .social-media a:hover{
-    background:#0ef ;
+    background:#A084DC ;
     color: #1f242d;
-    box-shadow: 0 0 20px #0ef;
+    box-shadow: 0 0 20px #A084DC;
 }
 
 .link ul li {
@@ -179,7 +202,7 @@ footer {
 }
 
 .link ul li a:hover {
-    color: #0ef;
+    color: #A084DC;
 }
 
 .contact ul li {
@@ -220,7 +243,7 @@ footer {
 
 /* Estilos medida celular */
 
-@media (max-width:578px) {
+@media (max-width:878px) {
 
     .checkbtn {
         display: block;
@@ -229,7 +252,7 @@ footer {
         
     }
 
-    .superior .logo img{
+    .superior .logo h2{
         margin: 10px;
         margin-top: 18px;
     }
@@ -244,13 +267,41 @@ footer {
         position: fixed;
         width: 100%;
         height: 110vh;
-        background: #232832;
+        background: #645CBB;
         top: 100px;
         left: -100%;
+        display: flex;
+        flex-direction: column;
         text-align: center;
         transition: all .5s;
-    }   
-        
+    }  
+
+    nav ul li:hover>.opciones-desplegable{
+        display: flex;
+    }
+    .opciones-desplegable {
+        display: none;
+        flex-direction: column;
+        position: relative;
+        padding: 10px;
+        margin-top: 10px;
+        background-color:#BFACE2 ;
+        transition: all .5s ease-in;
+    
+    }  
+    .opciones-desplegable li{
+        display: block;
+    }
+    .opciones-desplegable li{
+        padding: 15px;
+    }
+      
+    .opciones li{
+        padding: 15px;
+    }
+    .opciones li a{
+        display: block;
+    }
 
 
     #check:checked~ul {

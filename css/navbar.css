@@ -101,24 +101,27 @@ nav ul li:hover>.opciones-desplegable{
     
 }
 
-/* .opciones li ul li{
-    position: absolute;
-   
-   
-}
-
-.opciones li ul li:hover{
-    display:initial;
-   
-} */
 
 
 footer {
     background-color: #414854;
+    color: white; 
+}
+
+.footer_width p a{
     color: white;
+    margin-right: 130px;
+}
+
+iframe{
+    border-radius: 10%;
+    transition: .3s all ease;
     
+}
+
+iframe:hover{
+    box-shadow: 0 0 20px #A084DC;
     
-   
 }
 
 .footer_info {
@@ -243,7 +246,7 @@ footer {
 
 /* Estilos medida celular */
 
-@media (max-width:878px) {
+@media (max-width:700px) {
 
     .checkbtn {
         display: block;
@@ -252,15 +255,13 @@ footer {
         
     }
 
-    .superior .logo h2{
-        margin: 10px;
-        margin-top: 18px;
-    }
+   .superior .logo img{
+    margin-left: 30px;
+   }
 
     .checkbtn:hover{
         color: #0ef;
-        transition: .5s;
-        
+        transition: .5s;   
     }
 
     .opciones {
@@ -339,4 +340,19 @@ footer {
     .link a {
         margin-bottom: 40px;
     }
-}
+
+    .go-top-button{
+        width: 0rem;
+        height: 0rem;
+        background: #8178e9;
+        border-radius: 50%;
+        cursor: pointer;
+        transition: .2s;
+        top: -50%;
+        left:-50%;
+        transform: translate(-50%,-50%);
+        z-index: -1;
+        margin-left: 100px;
+      }
+
+    }    

@@ -8,11 +8,11 @@ productContainers.forEach((item, i) => { /* Por cada item encontrado en el conte
     let containerWidth = containerDimensions.width; /* Tomamos el ancho */
 
     nxtBtn[i].addEventListener('click', () => {
-        item.scrollLeft += 290;  /* Por cada click al boton el item se movera en +x segun en tamaño del contenedor  */
+        item.scrollLeft += containerWidth;  /* Por cada click al boton el item se movera en +x segun en tamaño del contenedor  */
     })
 
     preBtn[i].addEventListener('click', () => {
-        item.scrollLeft -= 290;  /* Por cada click al boton el item se movera en -x segun en tamaño del contenedor */
+        item.scrollLeft -= containerWidth;  /* Por cada click al boton el item se movera en -x segun en tamaño del contenedor */
     })
 })
 

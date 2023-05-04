@@ -5,6 +5,7 @@
   box-sizing: border-box;
   text-decoration: none;
   font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
 }
 
 html{
@@ -304,12 +305,13 @@ article>img{
 /* Boton ir arriba */
 .go-top-container {
   position:fixed;
-  bottom:4rem;
-  right: 4rem;
+  bottom:0.1em;
+  right: 5rem;
   width: 6.6rem;
   height: 6.6;
   z-index: -1;
-  top:85%;
+  /* top:10%; */
+  /* top:85%; */
 }
 
 .go-top-button{
@@ -362,5 +364,27 @@ article>img{
   100%{
     width: 6.6rem;
     height: 6.6rem;
+  }
+}
+
+@media (max-width:878px) {
+
+  .show .go-top-button{
+    animation: popup .3s ease-in-out;
+    width: 4.3rem;
+    height: 4.3rem;
+    z-index: 11;
+  }
+  .go-top-button i{
+    position: absolute;
+    font-size: 1.2rem;
+    top:48%;
+    left:50%;
+    transform:translate(-50%,-50%)scale(0);
+    color: #fff;
+    transition: .2s;
+  }
+  .show i{
+    transform:translate(-50%, -50%) scale(1); 
   }
 }

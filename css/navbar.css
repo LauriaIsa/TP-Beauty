@@ -12,6 +12,8 @@
     width: 100%;
     z-index: 3;
     height: 100px;
+    display: flex;
+    justify-content: space-between;
 
 }
 
@@ -20,13 +22,17 @@
     color: #fff;
     float: right;
     line-height: 80px;
-    margin-right: 40px;
+    margin-right: 70px;
     cursor: pointer;
     display: none;
 }
 
 #check {
     display: none;
+}
+
+.logo{
+    width: max-content;
 }
 
 .logo img {
@@ -54,7 +60,7 @@
 .menu {
     float: right;
     padding: 25px;
-    margin-right: 50px;
+    /* margin-right: 50px; */
 
 }
 
@@ -246,17 +252,16 @@ iframe:hover{
 
 /* Estilos medida celular */
 
-@media (max-width:700px) {
-
+@media (max-width:768px) {
     .checkbtn {
-        display: block;
-        margin-right: -45px;
-        margin-top: -10px;
+        display: flex;
+        /* margin-right: 0px; */
+        margin-top: 10px;
         
     }
 
    .superior .logo img{
-    margin-left: 30px;
+    margin-left: 0px;
    }
 
     .checkbtn:hover{
@@ -356,3 +361,9 @@ iframe:hover{
       }
 
     }    
+
+    @media (max-width: 480px){
+        .superior{
+            justify-content: space-evenly;
+        }
+    }

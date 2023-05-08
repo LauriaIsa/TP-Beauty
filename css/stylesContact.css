@@ -3,7 +3,8 @@
     box-sizing: content-box;
     text-align: center;
     flex-direction: column;
-    /*width: min(60rem, 100% );*/
+    /* width: 100%; */
+    width: min(60rem, 100% );
     margin: 0 auto;
     border-radius: 1rem;
     font-size: 1.8rem;
@@ -18,10 +19,12 @@ label{
   textarea {
     width: 75%;
     padding: 0.5rem 1.3rem;
-    margin-bottom: 20px;
+    display: block;
+    margin: 20px auto;
+    /* margin-bottom: 20px; */
     border: 1px solid #ccc;
     border-radius: 4px;
-    box-sizing: border-box;
+   /*  box-sizing: border-box; */
     font-size: 16px;
   }
 
@@ -43,10 +46,52 @@ label{
     margin-bottom: 2rem;
   }
 
-@media (min-width: 768px) {
-    #contacto {
+  /* form{
+    width: 100%;
+  } */
+  .item{
+    display: block;
+  }
+
+@media (max-width: 768px) {
+   /*  #contacto {
         max-width: 800px;
         margin: 0 auto;
+    } */
+    input,
+  textarea {
+    width: 45%;
+/*     padding: 0.5rem 1.3rem;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px; */
+  }
+  #botones{
+    display:block;
+    /* grid-template-columns: 1fr 1fr; */
+    /* justify-items: center; */
+    margin: 0px auto;
+  }
+  #botones button{
+    margin: 10px auto;
+  }
+  label{
+    font-size: 15px;
+  }
+  }
+
+  @media screen and (max-width:380px){
+    .title-form{
+      font-size:30px;
+    }
+    label{
+      margin:0px auto;
+    }
+
+    input{
+      margin:20px auto;
     }
   }
 
@@ -57,3 +102,4 @@ label{
     font-family: 'Courier New', Courier, monospace;
     font-style: italic;
 } 
+

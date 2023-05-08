@@ -22,7 +22,7 @@
     <link rel="icon" href="img/logo.PNG">
 </head>
 
-<body>
+<body onload="consultarDolar()">
     <header class="superior">
         <div class="logo">
             <img src="img/beauty_logo.gif" alt="" srcset="">
@@ -538,7 +538,7 @@
             <section id="contacto"  class="secciones product ">
                  
                 <form action="index.html" name="Form">
-                    <h2>Contactanos</h2>
+                    <h2 class="title-form">Contactanos</h2>
                     <div class=" ">
 
                         <div class="item">
@@ -592,6 +592,10 @@
                 <i class="fa-solid fa-arrow-up"></i>
             </div>
         </div>
+        <div class="dolar-oficial">
+            <p id="dolarOficial">Dolar Oficial:</p>
+        </div>
+
 
     </main>
 
@@ -599,11 +603,10 @@
     <footer>
         <div class="footer_info">
             <div class="footer_width abouth">
-                <h3 id="about" >About</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique impedit laboriosam facilis porro,
-                    eligendi est vitae. Ipsa, tenetur. Possimus hic harum, asperiores aut laboriosam natus ab numquam
-                    magnam minus soluta!</p>
-
+                
+                <h3>Cotización Dólar</h3>
+                <p id="dolarOficial"></p>
+                <h3>Seguinos en Redes</h3>
                 <div class="social-media">
                     <a href="https://www.twitter.com" target="_blank"><i class="bx bxl-twitter"></i></a>
                     <a href="https://www.youtube.com" target="_blank"><i class="bx bxl-youtube"></i></a>
@@ -617,8 +620,6 @@
                 <ul>
                     <li><a href="#">Home</a></li>
                     <li><a href="#">About</a></li>
-                    <li><a href="#">Service</a></li>
-                    <li><a href="#">FAQ</a></li>
                     <li><a href="#">Contact</a></li>
                 </ul>
             </div>
@@ -652,8 +653,8 @@
                 </ul>
             </div>
         </div>
-        <hr>
-        <hr>
+        <hr color="grey" >
+        <hr color="grey" >
         <div class="copy-right">
             <p>COPYRIGTH 2023 ALL RIGHTS RESERVED</p>
         </div>

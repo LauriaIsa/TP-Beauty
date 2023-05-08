@@ -33,3 +33,17 @@ document.querySelectorAll('.go-top-container')[0].addEventListener('click',()=>{
         behavior:'smooth'
     })
 })
+function consultarDolar() {
+    fetch("https://www.dolarsi.com/api/api.php?type=valoresprincipales")
+    .then((response)=>response.json())
+    .then((data)=>{
+        data.forEach(info =>{
+            if (info.casa.nombre == "Dolar Oficial"){
+                document.getElementById("dolarOficial").innerHTML +=" "+info.casa.compra
+                //console.log(info.casa.compra)
+            }
+        })
+    })
+    .catch(err=>console.log(err))
+
+}

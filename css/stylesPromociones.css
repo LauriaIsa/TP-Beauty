@@ -71,9 +71,12 @@
 
 @media screen and (max-width:380px){
 	.slider-frame {
+/* 		padding: 0px;
+		box-sizing: border-box; */
 		width: 190px;
 		height:auto;
-		/* margin:20px auto; */
+/* 		margin:0px; */
+		margin-left: -20px;
 	}
 }
 
@@ -81,7 +84,7 @@
 	.slider-frame {
 		width: 180px;
 		height:auto;
-		/* margin:20px auto; */
+		margin-left: -20px;
 	}
 }
 

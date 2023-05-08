@@ -17,16 +17,90 @@
     height: 150%;
 }
 .quienesSomos{
-    display: block !important;
+    display: block ;
     padding:10px;
     margin: 10px;
 }
 .mision{
-    display:block !important;
+    display:block;
     padding: 10px;
     margin: 10px;
 }
 .col{
     display: block;
- 
+    height: max-content;
+}
+
+@media (max-width:1400px){
+    .contenedor{
+        display:block !important;
+        height: max-content;
+        width: 100%;
+        padding: 0;
+        margin:0;
+        box-sizing: border-box;
+        /* padding: 100px
+        height: 550px; */
+    }
+    .mision{
+        margin:0px 0px;
+        width:100% !important;
+    }
+    .col{
+        width:100vw;
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+/*     .col{
+        display: none !important;
+    } */
+    /* .contenedor{
+        display:block !important;
+        padding: 100px;
+        height: 550px;
+    } */
+    .imgQuienes{
+        display:block;
+        width: 80%;
+    }
+    .imgQuienes img{
+        height: auto;
+        width: 100%;
+        /* border-radius: 100%; */
+    }
+}
+
+@media (max-width:640px){
+    .imgQuienes img{
+        /* height: 30vh;
+        width: 60vw; */
+        /* border-radius: 100%; */
+        /* width:30%; */
+    }
+}
+@media(max-width:540px){
+    .imgQuienes img{
+        /* height: 20vh;
+        width: 50vw; */
+        /* border-radius: 100%; */
+    }
+}
+
+@media(max-width:440px){
+    .quienesSomos p{
+        font-size: 13px;
+    }
+    .quienesSomos{
+        /* height: 200px; */
+    }
+    .mision{
+        font-size: 13px;
+    }
+    .imgQuienes img{
+        /* height: 15vh; */
+        /* height: auto;
+        width: 40vw; */
+        /* border-radius: 100%; */
+    }
 }

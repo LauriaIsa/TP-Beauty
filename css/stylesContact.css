@@ -1,16 +1,24 @@
 #contacto{
-   background-color: rgba(233, 129, 129, 0.2); 
-    box-sizing: content-box;
+
+    box-sizing: border-box;
     text-align: center;
     flex-direction: column;
     /* width: 100%; */
-    width: min(60rem, 100% );
-    margin: 0 auto;
-    border-radius: 1rem;
+    width: 100vw;
+    /* width: min(60rem, 100% ); */
+    /* margin: 0 auto; */
+    
     font-size: 1.8rem;
     font-weight: 700;
     margin-bottom: 2rem;
-    display: block; 
+    /* display: block;  */
+}
+form{
+  background-color: rgba(233, 129, 129, 0.2); 
+  border-radius: 1rem;
+  margin: 0px auto;
+  width: 80%;
+  padding: 20px;
 }
 label{
   display:block;
@@ -58,6 +66,12 @@ label{
         max-width: 800px;
         margin: 0 auto;
     } */
+    form{
+      width:60%
+    }
+    h2{
+      font-size:20px
+    }
     input,
   textarea {
     width: 45%;
@@ -83,8 +97,9 @@ label{
   }
 
   @media screen and (max-width:380px){
+    
     .title-form{
-      font-size:30px;
+      font-size:15px;
     }
     label{
       margin:0px auto;

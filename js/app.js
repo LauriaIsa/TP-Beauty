@@ -3,6 +3,17 @@ const productContainers = [...document.querySelectorAll('.product-container')];
 const nxtBtn = [...document.querySelectorAll('.nxt-btn')];
 const preBtn = [...document.querySelectorAll('.pre-btn')];
 
+let btnHombre = document.getElementById("btnHombre");
+let btnMujer = document.getElementById("btnMujer");
+let btnMake = document.getElementById("btnMake");
+
+let btnAcerca = document.getElementById("btnAcerca");
+let btnProductos = document.getElementById("btnProductos");
+let btnContacto = document.getElementById("btnContacto");
+let check = document.getElementById("check");
+
+
+
 productContainers.forEach((item, i) => { /* Por cada item encontrado en el contenedor de productos */
     let containerDimensions = item.getBoundingClientRect(); /* Tomamos posicion y el tamaño de cada card product */
     let containerWidth = containerDimensions.width; /* Tomamos el ancho */
@@ -39,7 +50,7 @@ function consultarDolar() {
     .then((data)=>{
         data.forEach(info =>{
             if (info.casa.nombre == "Dolar Oficial"){
-                document.getElementById("dolarOficial").innerHTML +=" "+info.casa.compra
+                document.getElementById("dolarOficial").innerHTML +=" "+"$"+info.casa.compra
                 //console.log(info.casa.compra)
             }
         })
@@ -47,3 +58,55 @@ function consultarDolar() {
     .catch(err=>console.log(err))
 
 }
+//Eventos
+btnAcerca.addEventListener("click",()=>{
+    btnProductos.classList.remove('active')
+    btnContacto.classList.remove('active')
+    check.checked=false
+
+    if(btnAcerca.classList[0]=="active"){
+        btnAcerca.classList.remove('active') 
+        
+    }else{
+        btnAcerca.classList.add('active')
+    }
+})
+
+btnProductos.addEventListener("click",()=>{
+    btnAcerca.classList.remove('active')
+    btnContacto.classList.remove('active')
+    check.checked=false
+
+    if(btnProductos.classList[0]=="active"){
+        btnProductos.classList.remove('active') 
+        
+    }else{
+        btnProductos.classList.add('active')
+    }
+})
+
+btnContacto.addEventListener("click",()=>{
+    btnProductos.classList.remove('active')
+    btnAcerca.classList.remove('active')
+    check.checked=false
+    if(btnAcerca.classList[0]=="active"){
+        btnContacto.classList.remove('active') 
+        
+    }else{
+        btnContacto.classList.add('active')
+    }
+
+    
+})
+
+btnHombre.addEventListener("click",()=>{
+    check.checked=false
+})
+
+btnMujer.addEventListener("click",()=>{
+    check.checked=false
+})
+
+btnMake.addEventListener("click",()=>{
+    check.checked=false
+})

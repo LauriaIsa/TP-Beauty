@@ -1,8 +1,19 @@
 function validarContacto() {
     let validar= validarNombre() && validarTelefono() && validarEmail() && validarMensaje();
     if(validar){
-        alert("¡Gracias por contactarnos!");
-        document.Form.submit();
+        //alert("¡Gracias por contactarnos!");
+        Swal.fire({
+            title:"Desea enviar el mensaje?",
+            confirmButtonText: 'Si',
+            cancelButtonText:"No",
+            showCancelButton: true,
+            showCloseButton: false
+        }).then((result)=>{
+            if(result.isConfirmed){
+                document.Form.submit()
+            }
+        })
+        
 
     }
 }
@@ -59,3 +70,4 @@ function validarMensaje(){
         return true;
     }
 }
+

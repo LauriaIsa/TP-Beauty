@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="css/stylesQuienes.css">
     <link rel="stylesheet" href="css/stylesContact.css">
     <link rel="icon" href="img/logo.PNG">
+
 </head>
 
 <body onload="consultarDolar()">
@@ -39,16 +40,16 @@
             </a>
 
             <ul class="opciones">
-                <li><a class="active desplegable" href="">Productos</a>
+                <li><a class="desplegable" href="#perfumeshombre" id="btnProductos">PRODUCTOS</a>
                     <ul class="opciones-desplegable">
-                        <li><a href="#perfumeshombre">Perfumes Hombre</a></li>
-                        <li><a href="#perfumesmujer">Perfumes Mujer</a></li>
-                        <li><a href="#makeup">Make Up</a></li>
+                        <li><a href="#perfumeshombre" id="btnHombre">Perfumes Hombre</a></li>
+                        <li><a href="#perfumesmujer" id="btnMujer" >Perfumes Mujer</a></li>
+                        <li><a href="#makeup" id="btnMake" >Make Up</a></li>
                     </ul>
                 </li>
                 <!-- <li><a href="#" class="active">PERFUMES</a> -->
-                <li><a href="#acercaDe">ACERCA DE NOSOTROS</a></li>
-                <li><a href="#contacto">CONTACTO</a></li>
+                <li><a href="#acercaDe" id="btnAcerca" >ACERCA DE NOSOTROS</a></li>
+                <li><a href="#contactoForm" id="btnContacto" >CONTACTO</a></li>
             </ul>
         </nav>
     </header>
@@ -535,7 +536,12 @@
 
             </section>
             <!-- formulario de contacto -->
-            <section id="contacto"  class="secciones product ">
+            <br>
+            <br>
+            <section id="contactoForm"></section>
+            <br>
+            <br>
+            <section id="contacto"  class="">
                  
                 <form action="index.html" name="Form">
                     <h2 class="title-form">Contactanos</h2>
@@ -586,15 +592,17 @@
         </div>
 
         <br><br>
-
-        <div class="go-top-container">
-            <div class="go-top-button">
-                <i class="fa-solid fa-arrow-up"></i>
+        <div class="container-buttons">
+            <div class="go-top-container">
+                <div class="go-top-button">
+                    <i class="fa-solid fa-arrow-up"></i>
+                </div>
+            </div>
+            <div class="dolar-oficial">
+                <p id="dolarOficial">Dolar Oficial:</p>
             </div>
         </div>
-        <div class="dolar-oficial">
-            <p id="dolarOficial">Dolar Oficial:</p>
-        </div>
+        
 
 
     </main>
@@ -604,8 +612,6 @@
         <div class="footer_info">
             <div class="footer_width abouth">
                 
-                <h3>Cotización Dólar</h3>
-                <p id="dolarOficial"></p>
                 <h3>Seguinos en Redes</h3>
                 <div class="social-media">
                     <a href="https://www.twitter.com" target="_blank"><i class="bx bxl-twitter"></i></a>
@@ -616,15 +622,15 @@
                 </div>
             </div>
             <div class="footer_width link">
-                <h3>Quick Link</h3>
+                <h3>Links</h3>
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#perfumeshombre">Productos</a></li>
+                    <li><a href="#acercaDe">Acerca de nostros</a></li>
+                    <li><a href="#contactoForm">Contacto</a></li>
                 </ul>
             </div>
             <div class="footer_width contact">
-                <h2>Contact</h2>
+                <h2>Contacto</h2>
                 <ul>
                     <li>
                         <span><i class="fas fa-map-maker-alt"></i></span>
@@ -647,26 +653,25 @@
                     <li>
                         <span><i class="#"></i></span>
 
-                        <a style="color: white;" href="#">000 000 000</a>
+                        
                     </li>
 
                 </ul>
             </div>
         </div>
         <hr color="grey" >
-        <hr color="grey" >
+        
         <div class="copy-right">
-            <p>COPYRIGTH 2023 ALL RIGHTS RESERVED</p>
+            <p>COPYRIGTH &copy 2023 ALL RIGHTS RESERVED</p>
         </div>
 
 
     </footer>
 
-
-
     <script src="js/app.js"></script>
     <script src="js/contacto.js"></script>
     <script src="https://kit.fontawesome.com/88c9bdbb87.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 
 </html>

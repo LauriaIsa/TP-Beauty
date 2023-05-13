@@ -1,10 +1,7 @@
-/* #acercaDe{
-    display: inline-block !important;
-    height: 10%;
-} */
+
 .contenedor{
     display:inline-flex;
-    padding: 100px;
+    padding: 80px;
     height: 550px;
 }
 .imgQuienes{
@@ -18,20 +15,26 @@
 }
 .quienesSomos{
     display: block ;
-    padding:10px;
+    padding:20px;
     margin: 10px;
+    background-color: #A084DC;
+    color: #fff;
+    border-radius:30px;
 }
 .mision{
     display:block;
-    padding: 10px;
+    padding: 20px;
     margin: 10px;
+    background-color: #A084DC;
+    color: #fff;
+    border-radius:30px;
 }
 .col{
     display: block;
     height: max-content;
 }
 
-@media (max-width:1400px){
+@media (max-width:1260px){
     .contenedor{
         display:block !important;
         height: max-content;

@@ -144,15 +144,17 @@ iframe:hover{
 
 .footer_info h3 {
     margin-bottom: 20px;
-    font-size: 14px;
-    
-
+    font-size: 14px; 
 }
+
+
+
 
 .contact{
     margin-left: 100px;
+    margin-top: -1.4rem;
 }
-.about,
+
 .contact {
     width: auto;
     
@@ -316,6 +318,17 @@ iframe:hover{
     }
 
 
+    .abouth h3{
+        margin-left: 150px;
+
+    }
+
+    .social-media {
+        
+        margin-left: 110px;
+    }
+
+
     #check:checked~ul {
         left: 0;
     }
@@ -328,16 +341,14 @@ iframe:hover{
 
     .contact{
         margin-left: 40%;
-        margin-top: 40px;   
+        margin-top: 10px;   
     }
 
     .link {
         margin-left: 40%;
     }
 
-    .link li a{
-        margin: 10px;
-        }
+    
 
     .footer_info {
         flex-direction: column;
@@ -364,6 +375,10 @@ iframe:hover{
         transform: translate(-50%,-50%);
         z-index: -1;
         margin-left: 100px;
+      }
+
+      .copy-right{
+        font-size: 11px;
       }
 
     }    
